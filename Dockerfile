@@ -10,5 +10,5 @@ RUN apt-get update && apt-get install -y build-essential libc6-dev libc6-dev-i38
 
 RUN tar Jxf quickjs-${QUICKJS_VERSION}.tar.xz && cd quickjs-${QUICKJS_VERSION} && make install
 
-ENTRYPOINT ["sh", "-c", "qjsc -o $MAIN_FILE $MAIN_FILE.js"]
+ENTRYPOINT ["sh", "-c", "qjsc -o $1 $1.js"]
 
