@@ -1,4 +1,4 @@
-name: 'QuickJS for Ubuntu'
+name: 'QuickJS for AlpineOS'
 description: 'Ubuntu with QuickJS (qjs, qjsc)'
 inputs:
   mainFile:
