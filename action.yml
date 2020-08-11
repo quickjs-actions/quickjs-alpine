@@ -1,0 +1,12 @@
+name: 'QuickJS for AlpineOS'
+description: 'Ubuntu with QuickJS (qjs, qjsc)'
+inputs:
+  mainFile:
+    description: 'Main script to run/compile'
+    required: true
+    default: 'main.js'
+runs:
+  using: 'docker'
+  image: 'Dockerfile'
+  args:
+    - ${{ inputs.mainFile }}
